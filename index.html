@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevator Action Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="ui-layer">
+            <div id="score-display">SCORE: <span id="score">0</span></div>
+            <div id="docs-display">DOCS: <span id="docs">0</span></div>
+            <div id="lives-display">LIVES: <span id="lives">3</span></div>
+        </div>
+        <div id="screens">
+            <div id="start-screen" class="screen active">
+                <h1>ELEVATOR ACTION</h1>
+                <p>Press ENTER to Start</p>
+                <div class="instructions">
+                    <p>ARROWS: Move / Ride Elevators</p>
+                    <p>UP: Jump</p>
+                    <p>DOWN: Duck / Enter Doors</p>
+                    <p>SPACE: Shoot</p>
+                    <p>Enter RED DOORS to collect documents.</p>
+                </div>
+            </div>
+            <div id="game-over-screen" class="screen">
+                <h1>GAME OVER</h1>
+                <p>Score: <span id="final-score">0</span></p>
+                <p>Press ENTER to Restart</p>
+            </div>
+            <div id="level-screen" class="screen">
+                <h1 id="level-title">LEVEL 1</h1>
+                <p>Be careful, enemy agents nearby.</p>
+            </div>
+            <div id="win-screen" class="screen">
+                <h1>MISSION ACCOMPLISHED</h1>
+                <p>Score: <span id="win-score">0</span></p>
+                <p>Press ENTER to Play Again</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
